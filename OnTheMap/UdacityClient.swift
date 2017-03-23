@@ -7,7 +7,18 @@
 //
 
 import UIKit
+import Foundation
 
 class UdacityClient: NSObject {
+    
+    var sessionID: String? = nil
+    
+    var session = URLSession.shared
+    
+    var userID: String? = nil
+    
+    override init() {
+        super.init()
+    }
 
 }

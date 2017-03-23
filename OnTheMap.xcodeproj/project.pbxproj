@@ -8,22 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		2647C8C01E7DF761007D8283 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647C8BF1E7DF761007D8283 /* AppDelegate.swift */; };
-		2647C8C21E7DF761007D8283 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647C8C11E7DF761007D8283 /* ViewController.swift */; };
+		2647C8C21E7DF761007D8283 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647C8C11E7DF761007D8283 /* LoginViewController.swift */; };
 		2647C8C51E7DF761007D8283 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2647C8C31E7DF761007D8283 /* Main.storyboard */; };
 		2647C8C81E7DF761007D8283 /* OnTheMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2647C8C61E7DF761007D8283 /* OnTheMap.xcdatamodeld */; };
 		2647C8CA1E7DF761007D8283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2647C8C91E7DF761007D8283 /* Assets.xcassets */; };
 		2647C8CD1E7DF761007D8283 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2647C8CB1E7DF761007D8283 /* LaunchScreen.storyboard */; };
+		2647C8D51E7DFB23007D8283 /* fbButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647C8D41E7DFB23007D8283 /* fbButton.swift */; };
+		2647C8D81E81B420007D8283 /* MapViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647C8D71E81B420007D8283 /* MapViewViewController.swift */; };
+		2647C8DC1E81B4D5007D8283 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647C8DB1E81B4D5007D8283 /* Constants.swift */; };
+		2647C8DE1E821FD4007D8283 /* GCDBlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647C8DD1E821FD4007D8283 /* GCDBlackBox.swift */; };
+		269A20B01E82E6AE00370B94 /* UdacityClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A20AF1E82E6AE00370B94 /* UdacityClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2647C8BC1E7DF761007D8283 /* OnTheMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnTheMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2647C8BF1E7DF761007D8283 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2647C8C11E7DF761007D8283 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2647C8C11E7DF761007D8283 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2647C8C41E7DF761007D8283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2647C8C71E7DF761007D8283 /* OnTheMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OnTheMap.xcdatamodel; sourceTree = "<group>"; };
 		2647C8C91E7DF761007D8283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2647C8CC1E7DF761007D8283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2647C8CE1E7DF761007D8283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2647C8D41E7DFB23007D8283 /* fbButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fbButton.swift; sourceTree = "<group>"; };
+		2647C8D71E81B420007D8283 /* MapViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewViewController.swift; sourceTree = "<group>"; };
+		2647C8DB1E81B4D5007D8283 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2647C8DD1E821FD4007D8283 /* GCDBlackBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDBlackBox.swift; sourceTree = "<group>"; };
+		269A20AF1E82E6AE00370B94 /* UdacityClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +67,43 @@
 			isa = PBXGroup;
 			children = (
 				2647C8BF1E7DF761007D8283 /* AppDelegate.swift */,
-				2647C8C11E7DF761007D8283 /* ViewController.swift */,
+				2647C8DD1E821FD4007D8283 /* GCDBlackBox.swift */,
+				2647C8DA1E81B4A9007D8283 /* Model */,
+				2647C8D91E81B494007D8283 /* View */,
+				2647C8D61E81B3F2007D8283 /* Controller */,
 				2647C8C31E7DF761007D8283 /* Main.storyboard */,
 				2647C8C91E7DF761007D8283 /* Assets.xcassets */,
 				2647C8CB1E7DF761007D8283 /* LaunchScreen.storyboard */,
 				2647C8CE1E7DF761007D8283 /* Info.plist */,
 				2647C8C61E7DF761007D8283 /* OnTheMap.xcdatamodeld */,
+				2647C8D41E7DFB23007D8283 /* fbButton.swift */,
 			);
 			path = OnTheMap;
+			sourceTree = "<group>";
+		};
+		2647C8D61E81B3F2007D8283 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2647C8C11E7DF761007D8283 /* LoginViewController.swift */,
+				2647C8D71E81B420007D8283 /* MapViewViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		2647C8D91E81B494007D8283 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2647C8DA1E81B4A9007D8283 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2647C8DB1E81B4D5007D8283 /* Constants.swift */,
+				269A20AF1E82E6AE00370B94 /* UdacityClient.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				269A20B01E82E6AE00370B94 /* UdacityClient.swift in Sources */,
 				2647C8C81E7DF761007D8283 /* OnTheMap.xcdatamodeld in Sources */,
-				2647C8C21E7DF761007D8283 /* ViewController.swift in Sources */,
+				2647C8D51E7DFB23007D8283 /* fbButton.swift in Sources */,
+				2647C8C21E7DF761007D8283 /* LoginViewController.swift in Sources */,
 				2647C8C01E7DF761007D8283 /* AppDelegate.swift in Sources */,
+				2647C8D81E81B420007D8283 /* MapViewViewController.swift in Sources */,
+				2647C8DC1E81B4D5007D8283 /* Constants.swift in Sources */,
+				2647C8DE1E821FD4007D8283 /* GCDBlackBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +350,7 @@
 				2647C8D31E7DF761007D8283 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
