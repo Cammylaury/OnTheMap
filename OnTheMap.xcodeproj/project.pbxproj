@@ -13,11 +13,14 @@
 		2647C8C81E7DF761007D8283 /* OnTheMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2647C8C61E7DF761007D8283 /* OnTheMap.xcdatamodeld */; };
 		2647C8CA1E7DF761007D8283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2647C8C91E7DF761007D8283 /* Assets.xcassets */; };
 		2647C8CD1E7DF761007D8283 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2647C8CB1E7DF761007D8283 /* LaunchScreen.storyboard */; };
-		2647C8D51E7DFB23007D8283 /* fbButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647C8D41E7DFB23007D8283 /* fbButton.swift */; };
 		2647C8D81E81B420007D8283 /* MapViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647C8D71E81B420007D8283 /* MapViewViewController.swift */; };
 		2647C8DC1E81B4D5007D8283 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647C8DB1E81B4D5007D8283 /* Constants.swift */; };
 		2647C8DE1E821FD4007D8283 /* GCDBlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647C8DD1E821FD4007D8283 /* GCDBlackBox.swift */; };
 		269A20B01E82E6AE00370B94 /* UdacityClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A20AF1E82E6AE00370B94 /* UdacityClient.swift */; };
+		269A20B21E845D8B00370B94 /* StudentInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A20B11E845D8B00370B94 /* StudentInformation.swift */; };
+		269A20B41E85943700370B94 /* facebookBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A20B31E85943700370B94 /* facebookBtn.swift */; };
+		269A20B61E8594E400370B94 /* googlePlusBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A20B51E8594E400370B94 /* googlePlusBtn.swift */; };
+		269A20B81E8596F300370B94 /* LogInBtnstylekit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A20B71E8596F300370B94 /* LogInBtnstylekit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,11 +32,14 @@
 		2647C8C91E7DF761007D8283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2647C8CC1E7DF761007D8283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2647C8CE1E7DF761007D8283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2647C8D41E7DFB23007D8283 /* fbButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fbButton.swift; sourceTree = "<group>"; };
 		2647C8D71E81B420007D8283 /* MapViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewViewController.swift; sourceTree = "<group>"; };
 		2647C8DB1E81B4D5007D8283 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2647C8DD1E821FD4007D8283 /* GCDBlackBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDBlackBox.swift; sourceTree = "<group>"; };
 		269A20AF1E82E6AE00370B94 /* UdacityClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityClient.swift; sourceTree = "<group>"; };
+		269A20B11E845D8B00370B94 /* StudentInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentInformation.swift; sourceTree = "<group>"; };
+		269A20B31E85943700370B94 /* facebookBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = facebookBtn.swift; sourceTree = "<group>"; };
+		269A20B51E8594E400370B94 /* googlePlusBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = googlePlusBtn.swift; sourceTree = "<group>"; };
+		269A20B71E8596F300370B94 /* LogInBtnstylekit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInBtnstylekit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +82,6 @@
 				2647C8CB1E7DF761007D8283 /* LaunchScreen.storyboard */,
 				2647C8CE1E7DF761007D8283 /* Info.plist */,
 				2647C8C61E7DF761007D8283 /* OnTheMap.xcdatamodeld */,
-				2647C8D41E7DFB23007D8283 /* fbButton.swift */,
 			);
 			path = OnTheMap;
 			sourceTree = "<group>";
@@ -93,6 +98,7 @@
 		2647C8D91E81B494007D8283 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				269A20B91E85970000370B94 /* StylekitStuff */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -102,8 +108,19 @@
 			children = (
 				2647C8DB1E81B4D5007D8283 /* Constants.swift */,
 				269A20AF1E82E6AE00370B94 /* UdacityClient.swift */,
+				269A20B11E845D8B00370B94 /* StudentInformation.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		269A20B91E85970000370B94 /* StylekitStuff */ = {
+			isa = PBXGroup;
+			children = (
+				269A20B71E8596F300370B94 /* LogInBtnstylekit.swift */,
+				269A20B31E85943700370B94 /* facebookBtn.swift */,
+				269A20B51E8594E400370B94 /* googlePlusBtn.swift */,
+			);
+			name = StylekitStuff;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,10 +198,13 @@
 			files = (
 				269A20B01E82E6AE00370B94 /* UdacityClient.swift in Sources */,
 				2647C8C81E7DF761007D8283 /* OnTheMap.xcdatamodeld in Sources */,
-				2647C8D51E7DFB23007D8283 /* fbButton.swift in Sources */,
 				2647C8C21E7DF761007D8283 /* LoginViewController.swift in Sources */,
 				2647C8C01E7DF761007D8283 /* AppDelegate.swift in Sources */,
 				2647C8D81E81B420007D8283 /* MapViewViewController.swift in Sources */,
+				269A20B61E8594E400370B94 /* googlePlusBtn.swift in Sources */,
+				269A20B41E85943700370B94 /* facebookBtn.swift in Sources */,
+				269A20B21E845D8B00370B94 /* StudentInformation.swift in Sources */,
+				269A20B81E8596F300370B94 /* LogInBtnstylekit.swift in Sources */,
 				2647C8DC1E81B4D5007D8283 /* Constants.swift in Sources */,
 				2647C8DE1E821FD4007D8283 /* GCDBlackBox.swift in Sources */,
 			);

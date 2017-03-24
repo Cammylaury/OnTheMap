@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -57,18 +58,49 @@
                                 </constraints>
                                 <state key="normal" title="Sign In!"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ae6-lt-KLE">
+                                <rect key="frame" x="16" y="554" width="113" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="Fq9-jW-bXR"/>
+                                    <constraint firstAttribute="width" constant="113" id="hz0-Xx-9la"/>
+                                </constraints>
+                                <state key="normal" image="1490317093_facebook_circle_color"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W93-l2-ZdB">
+                                <rect key="frame" x="246" y="554" width="113" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="Hve-fI-6Wo"/>
+                                    <constraint firstAttribute="width" constant="113" id="UR0-BZ-0wa"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wb2-pO-52Q">
+                                <rect key="frame" x="131" y="554" width="113" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="9uf-AP-ITA"/>
+                                    <constraint firstAttribute="width" constant="113" id="Im8-b9-09A"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="t9n-eU-nHw" secondAttribute="bottom" constant="508" id="0fp-BC-oPA"/>
                             <constraint firstItem="t9n-eU-nHw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="54" id="2c3-xj-N8v"/>
                             <constraint firstItem="2nZ-FR-j6T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Aq-I4-CI8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ae6-lt-KLE" secondAttribute="bottom" constant="40" id="5aV-We-zqy"/>
                             <constraint firstAttribute="trailing" secondItem="t9n-eU-nHw" secondAttribute="trailing" constant="54" id="6Q2-XR-ZKa"/>
                             <constraint firstItem="5LS-mA-gtE" firstAttribute="top" secondItem="PyB-f4-wjA" secondAttribute="bottom" constant="43" id="B74-Sq-cYe"/>
                             <constraint firstItem="2nZ-FR-j6T" firstAttribute="top" secondItem="5LS-mA-gtE" secondAttribute="bottom" constant="8" id="EaK-fk-qD4"/>
                             <constraint firstItem="t9n-eU-nHw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="I0R-NB-CUe"/>
+                            <constraint firstItem="Wb2-pO-52Q" firstAttribute="leading" secondItem="ae6-lt-KLE" secondAttribute="trailing" constant="2" id="K2C-Jd-X74"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W93-l2-ZdB" secondAttribute="trailing" id="QVI-V2-QA8"/>
+                            <constraint firstItem="W93-l2-ZdB" firstAttribute="leading" secondItem="Wb2-pO-52Q" secondAttribute="trailing" constant="2" id="XNC-LM-f5k"/>
                             <constraint firstItem="5LS-mA-gtE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bGo-tI-bAS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="W93-l2-ZdB" secondAttribute="bottom" constant="40" id="biv-rd-9CF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wb2-pO-52Q" secondAttribute="bottom" constant="40" id="fem-4b-Tb0"/>
                             <constraint firstItem="PyB-f4-wjA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ghQ-xI-Ivo"/>
+                            <constraint firstItem="ae6-lt-KLE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hVx-9m-Qi9"/>
                             <constraint firstItem="PyB-f4-wjA" firstAttribute="top" secondItem="t9n-eU-nHw" secondAttribute="bottom" constant="159" id="leC-wv-x12"/>
                         </constraints>
                     </view>
@@ -132,6 +164,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1490317093_facebook_circle_color" width="60" height="60"/>
         <image name="Image" width="225" height="225"/>
         <image name="list" width="32" height="32"/>
         <image name="map" width="32" height="32"/>
