@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26300BC51E884A7100C0135A /* Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26300BC41E884A7100C0135A /* Convenience.swift */; };
 		2647C8C01E7DF761007D8283 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647C8BF1E7DF761007D8283 /* AppDelegate.swift */; };
 		2647C8C21E7DF761007D8283 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647C8C11E7DF761007D8283 /* LoginViewController.swift */; };
 		2647C8C51E7DF761007D8283 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2647C8C31E7DF761007D8283 /* Main.storyboard */; };
@@ -19,11 +20,11 @@
 		269A20B01E82E6AE00370B94 /* UdacityClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A20AF1E82E6AE00370B94 /* UdacityClient.swift */; };
 		269A20B21E845D8B00370B94 /* StudentInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A20B11E845D8B00370B94 /* StudentInformation.swift */; };
 		269A20B41E85943700370B94 /* facebookBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A20B31E85943700370B94 /* facebookBtn.swift */; };
-		269A20B61E8594E400370B94 /* googlePlusBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A20B51E8594E400370B94 /* googlePlusBtn.swift */; };
 		269A20B81E8596F300370B94 /* LogInBtnstylekit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A20B71E8596F300370B94 /* LogInBtnstylekit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26300BC41E884A7100C0135A /* Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Convenience.swift; sourceTree = "<group>"; };
 		2647C8BC1E7DF761007D8283 /* OnTheMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnTheMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2647C8BF1E7DF761007D8283 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2647C8C11E7DF761007D8283 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -38,7 +39,6 @@
 		269A20AF1E82E6AE00370B94 /* UdacityClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityClient.swift; sourceTree = "<group>"; };
 		269A20B11E845D8B00370B94 /* StudentInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentInformation.swift; sourceTree = "<group>"; };
 		269A20B31E85943700370B94 /* facebookBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = facebookBtn.swift; sourceTree = "<group>"; };
-		269A20B51E8594E400370B94 /* googlePlusBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = googlePlusBtn.swift; sourceTree = "<group>"; };
 		269A20B71E8596F300370B94 /* LogInBtnstylekit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInBtnstylekit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +109,7 @@
 				2647C8DB1E81B4D5007D8283 /* Constants.swift */,
 				269A20AF1E82E6AE00370B94 /* UdacityClient.swift */,
 				269A20B11E845D8B00370B94 /* StudentInformation.swift */,
+				26300BC41E884A7100C0135A /* Convenience.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -118,7 +119,6 @@
 			children = (
 				269A20B71E8596F300370B94 /* LogInBtnstylekit.swift */,
 				269A20B31E85943700370B94 /* facebookBtn.swift */,
-				269A20B51E8594E400370B94 /* googlePlusBtn.swift */,
 			);
 			name = StylekitStuff;
 			sourceTree = "<group>";
@@ -201,9 +201,9 @@
 				2647C8C21E7DF761007D8283 /* LoginViewController.swift in Sources */,
 				2647C8C01E7DF761007D8283 /* AppDelegate.swift in Sources */,
 				2647C8D81E81B420007D8283 /* MapViewViewController.swift in Sources */,
-				269A20B61E8594E400370B94 /* googlePlusBtn.swift in Sources */,
 				269A20B41E85943700370B94 /* facebookBtn.swift in Sources */,
 				269A20B21E845D8B00370B94 /* StudentInformation.swift in Sources */,
+				26300BC51E884A7100C0135A /* Convenience.swift in Sources */,
 				269A20B81E8596F300370B94 /* LogInBtnstylekit.swift in Sources */,
 				2647C8DC1E81B4D5007D8283 /* Constants.swift in Sources */,
 				2647C8DE1E821FD4007D8283 /* GCDBlackBox.swift in Sources */,

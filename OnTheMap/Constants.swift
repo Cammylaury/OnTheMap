@@ -8,12 +8,12 @@
 
 import Foundation
 import UIKit
-
-extension UdacityClient {
     
     // For a lot of this I referenced from the "Movie Manager" app
     
-    struct Constants {
+struct Constants {
+    
+    struct URLPlusAPIKey {
     
         // APIKey and Application ID
         static let APIKey = "QuWThTdiRmTux3YaDseUSEpUKo7aBYM737yKd4gY"
@@ -60,14 +60,17 @@ extension UdacityClient {
         static let ConfigSecureBaseURL = "secure_base_url"
         
         // Location
-        static let studentLocation = "objectId"
-        static let studentID = "uniqueKey"
+        static let objectID = "objectId"
+        static let uniqueKey = "uniqueKey"
         static let studentFirstName = "firstName"
         static let studentLastName = "lastName"
         static let studentMapString = "mapString"
         static let studentLongitude = "longitude"
         static let studentLatitude = "latitude"
+        static let mapString = "mapString"
+        static let updatedAt = "updatedAt"
+        static let mediaURL = "mediaURL"
+        static let key = "key"
         
     }
-
 }

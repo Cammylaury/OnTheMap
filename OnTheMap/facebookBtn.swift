@@ -8,6 +8,7 @@
 
 import UIKit
 
+@IBDesignable
 class facebookBtn: UIButton {
     
     override func draw(_ rect: CGRect) {

@@ -13,7 +13,7 @@
         <!--logInViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="logInViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="OnTheMap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="logInViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="OnTheMap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -25,7 +25,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="t9n-eU-nHw">
                                 <rect key="frame" x="54" y="28" width="267" height="131"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your email..." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PyB-f4-wjA">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your email..." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PyB-f4-wjA" customClass="log">
                                 <rect key="frame" x="54" y="318" width="267" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="267" id="ofd-t6-2Q6"/>
@@ -41,11 +41,13 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please log in with Udacity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gN6-tP-wAX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please log in with Udacity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gN6-tP-wAX">
                                 <rect key="frame" x="54" y="269" width="267" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="9cQ-QV-cq8"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -57,53 +59,57 @@
                                     <constraint firstAttribute="width" constant="126" id="fow-wf-F03"/>
                                 </constraints>
                                 <state key="normal" title="Sign In!"/>
+                                <connections>
+                                    <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j5t-yo-oaI"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ae6-lt-KLE">
-                                <rect key="frame" x="16" y="554" width="113" height="73"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1h-Sg-AhA" customClass="facebookBtn" customModule="OnTheMap" customModuleProvider="target">
+                                <rect key="frame" x="104" y="539" width="166" height="108"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="73" id="Fq9-jW-bXR"/>
-                                    <constraint firstAttribute="width" constant="113" id="hz0-Xx-9la"/>
+                                    <constraint firstAttribute="height" constant="108" id="Xtf-8Z-xbk"/>
                                 </constraints>
-                                <state key="normal" image="1490317093_facebook_circle_color"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W93-l2-ZdB">
-                                <rect key="frame" x="246" y="554" width="113" height="73"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or sign in with Facebook!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91V-CF-V39">
+                                <rect key="frame" x="104" y="515" width="167" height="16"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="73" id="Hve-fI-6Wo"/>
-                                    <constraint firstAttribute="width" constant="113" id="UR0-BZ-0wa"/>
+                                    <constraint firstAttribute="width" constant="167" id="J87-Yh-qGg"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wb2-pO-52Q">
-                                <rect key="frame" x="131" y="554" width="113" height="73"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="73" id="9uf-AP-ITA"/>
-                                    <constraint firstAttribute="width" constant="113" id="Im8-b9-09A"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                            </button>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="t9n-eU-nHw" secondAttribute="bottom" constant="508" id="0fp-BC-oPA"/>
                             <constraint firstItem="t9n-eU-nHw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="54" id="2c3-xj-N8v"/>
                             <constraint firstItem="2nZ-FR-j6T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Aq-I4-CI8"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ae6-lt-KLE" secondAttribute="bottom" constant="40" id="5aV-We-zqy"/>
+                            <constraint firstItem="G1h-Sg-AhA" firstAttribute="centerX" secondItem="2nZ-FR-j6T" secondAttribute="centerX" id="69j-cZ-ZPg"/>
                             <constraint firstAttribute="trailing" secondItem="t9n-eU-nHw" secondAttribute="trailing" constant="54" id="6Q2-XR-ZKa"/>
+                            <constraint firstItem="91V-CF-V39" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9aT-jz-3qf"/>
                             <constraint firstItem="5LS-mA-gtE" firstAttribute="top" secondItem="PyB-f4-wjA" secondAttribute="bottom" constant="43" id="B74-Sq-cYe"/>
                             <constraint firstItem="2nZ-FR-j6T" firstAttribute="top" secondItem="5LS-mA-gtE" secondAttribute="bottom" constant="8" id="EaK-fk-qD4"/>
                             <constraint firstItem="t9n-eU-nHw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="I0R-NB-CUe"/>
-                            <constraint firstItem="Wb2-pO-52Q" firstAttribute="leading" secondItem="ae6-lt-KLE" secondAttribute="trailing" constant="2" id="K2C-Jd-X74"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="W93-l2-ZdB" secondAttribute="trailing" id="QVI-V2-QA8"/>
-                            <constraint firstItem="W93-l2-ZdB" firstAttribute="leading" secondItem="Wb2-pO-52Q" secondAttribute="trailing" constant="2" id="XNC-LM-f5k"/>
+                            <constraint firstItem="G1h-Sg-AhA" firstAttribute="top" secondItem="91V-CF-V39" secondAttribute="bottom" constant="8" symbolic="YES" id="IQe-im-UaK"/>
+                            <constraint firstItem="G1h-Sg-AhA" firstAttribute="centerX" secondItem="gN6-tP-wAX" secondAttribute="centerX" id="IlP-S4-aVS"/>
+                            <constraint firstItem="gN6-tP-wAX" firstAttribute="leading" secondItem="PyB-f4-wjA" secondAttribute="leading" id="K7h-je-3eU"/>
+                            <constraint firstItem="G1h-Sg-AhA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="88" id="LzP-zZ-0pP"/>
+                            <constraint firstItem="G1h-Sg-AhA" firstAttribute="leading" secondItem="91V-CF-V39" secondAttribute="leading" id="NZN-bg-LdX"/>
+                            <constraint firstItem="PyB-f4-wjA" firstAttribute="top" secondItem="gN6-tP-wAX" secondAttribute="bottom" constant="21" id="b6x-tc-cnK"/>
                             <constraint firstItem="5LS-mA-gtE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bGo-tI-bAS"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="W93-l2-ZdB" secondAttribute="bottom" constant="40" id="biv-rd-9CF"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wb2-pO-52Q" secondAttribute="bottom" constant="40" id="fem-4b-Tb0"/>
                             <constraint firstItem="PyB-f4-wjA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ghQ-xI-Ivo"/>
-                            <constraint firstItem="ae6-lt-KLE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hVx-9m-Qi9"/>
                             <constraint firstItem="PyB-f4-wjA" firstAttribute="top" secondItem="t9n-eU-nHw" secondAttribute="bottom" constant="159" id="leC-wv-x12"/>
+                            <constraint firstItem="91V-CF-V39" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="88" id="m6E-PU-AwN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="91V-CF-V39" secondAttribute="trailing" constant="88" id="nDJ-Zp-7PO"/>
+                            <constraint firstAttribute="bottom" secondItem="G1h-Sg-AhA" secondAttribute="bottom" constant="20" symbolic="YES" id="xtS-Bf-cu2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="PyB-f4-wjA" id="Mnl-08-j71"/>
+                        <outlet property="logInWithFacebook" destination="G1h-Sg-AhA" id="11Y-tm-HcC"/>
+                        <outlet property="passwordTextField" destination="5LS-mA-gtE" id="PE1-ky-aoM"/>
+                        <outlet property="signInBtn" destination="2nZ-FR-j6T" id="8mP-9v-aCf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -164,7 +170,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1490317093_facebook_circle_color" width="60" height="60"/>
         <image name="Image" width="225" height="225"/>
         <image name="list" width="32" height="32"/>
         <image name="map" width="32" height="32"/>
