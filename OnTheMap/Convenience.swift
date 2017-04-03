@@ -10,4 +10,10 @@ import Foundation
 
 extension Constants {
     
+    func logout(handler: @escaping(_ response: Bool, _ error: String?) -> Void) {
+        
+        let parameters = [String:AnyObject]()
+        let urlRequest = UdacityClient.URLParameters(parameters: parameters, withPathExtension: "/api/session", withHost: Constants.URLPlusAPIKey.ApiHost)
+        
+    }
 }

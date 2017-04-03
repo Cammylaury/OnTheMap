@@ -53,4 +53,25 @@ class UdacityClient: NSObject, MKMapViewDelegate {
         
         completionHandler(parsedResult, nil)
     }
+    
+    func authenticateWithUdacity(email: String, password: String, loginWithDataHandler: @escaping(_ success: Bool, _ error: String?) -> Void) {
+        
+        self.login(email: email, password: password) {
+            (success, error) in
+            
+            if (success) {
+                self.getUserData() {
+                    
+                    (success, error) in
+                    loginWithDataHandler(success, error)
+                    
+                }
+            } else {
+                
+                loginWithDataHandler(success, error)
+            }
+            
+        }
+        
+    }
 }

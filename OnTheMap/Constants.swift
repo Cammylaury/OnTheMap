@@ -71,6 +71,10 @@ struct Constants {
         static let updatedAt = "updatedAt"
         static let mediaURL = "mediaURL"
         static let key = "key"
+        static let account = "account"
+        static let registered = "registered"
+        static let id = "id"
+        static let session = "session"
         
     }
 }
