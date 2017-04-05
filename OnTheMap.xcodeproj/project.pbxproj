@@ -17,6 +17,7 @@
 		2647C8D81E81B420007D8283 /* MapViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647C8D71E81B420007D8283 /* MapViewViewController.swift */; };
 		2647C8DC1E81B4D5007D8283 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647C8DB1E81B4D5007D8283 /* Constants.swift */; };
 		2647C8DE1E821FD4007D8283 /* GCDBlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647C8DD1E821FD4007D8283 /* GCDBlackBox.swift */; };
+		264B0E411E95598800463A8C /* pinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264B0E401E95598800463A8C /* pinViewController.swift */; };
 		269A20B01E82E6AE00370B94 /* UdacityClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A20AF1E82E6AE00370B94 /* UdacityClient.swift */; };
 		269A20B21E845D8B00370B94 /* StudentInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A20B11E845D8B00370B94 /* StudentInformation.swift */; };
 		269A20B41E85943700370B94 /* facebookBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A20B31E85943700370B94 /* facebookBtn.swift */; };
@@ -36,6 +37,7 @@
 		2647C8D71E81B420007D8283 /* MapViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewViewController.swift; sourceTree = "<group>"; };
 		2647C8DB1E81B4D5007D8283 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2647C8DD1E821FD4007D8283 /* GCDBlackBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDBlackBox.swift; sourceTree = "<group>"; };
+		264B0E401E95598800463A8C /* pinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pinViewController.swift; sourceTree = "<group>"; };
 		269A20AF1E82E6AE00370B94 /* UdacityClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityClient.swift; sourceTree = "<group>"; };
 		269A20B11E845D8B00370B94 /* StudentInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentInformation.swift; sourceTree = "<group>"; };
 		269A20B31E85943700370B94 /* facebookBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = facebookBtn.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			children = (
 				2647C8C11E7DF761007D8283 /* LoginViewController.swift */,
 				2647C8D71E81B420007D8283 /* MapViewViewController.swift */,
+				264B0E401E95598800463A8C /* pinViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				2647C8C81E7DF761007D8283 /* OnTheMap.xcdatamodeld in Sources */,
 				2647C8C21E7DF761007D8283 /* LoginViewController.swift in Sources */,
 				2647C8C01E7DF761007D8283 /* AppDelegate.swift in Sources */,
+				264B0E411E95598800463A8C /* pinViewController.swift in Sources */,
 				2647C8D81E81B420007D8283 /* MapViewViewController.swift in Sources */,
 				269A20B41E85943700370B94 /* facebookBtn.swift in Sources */,
 				269A20B21E845D8B00370B94 /* StudentInformation.swift in Sources */,

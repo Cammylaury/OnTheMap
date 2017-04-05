@@ -7,19 +7,22 @@
 //
 
 import UIKit
+import SafariServices
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signInBtn: UIButton!
+    @IBOutlet weak var signUpBtn: UIButton!
     @IBOutlet weak var logInWithFacebook: facebookBtn!
     
+    var keyboardOnScreen = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if emailTextField.text != nil {
+        if emailTextField.text == nil {
             passwordTextField.isEnabled = false
         }
         
@@ -44,5 +47,64 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "messagesViewController")
             self.present(vc!, animated: true, completion: nil)
         }
+    }
+    
+    // Sign up with Udacity using a web view
+    
+    @IBAction func signUp(_ sender: AnyObject) {
+        
+        let url = NSURL(string:"https://www.udacity.com/account/auth#!/signup")
+        let safariVC = SFSafariViewController(url: url as! URL)
+        present(safariVC, animated: true, completion: nil)
+        
+    }
+    
+    // Keyboard Stuff
+    
+    func subscribeToKeyboardNotifications() {
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
+    }
+    
+    func unsubscribeToKeyboardNotifications() {
+        
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
+    }
+    
+    func getKeyboardHeight(notification: NSNotification) -> CGFloat {
+        
+        let userInfo = notification.userInfo
+        let keyboardSize = userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue
+        return keyboardSize.cgRectValue.height
+    
+    }
+    
+    func keyboardWillShow(_ notification: Notification) {
+        
+    if !keyboardOnScreen {
+    view.frame.origin.y -= getKeyboardHeight(notification: notification as NSNotification)
+        
+    }
+    }
+    
+    func keyboardWillHide(_ notification: Notification) {
+        
+        if keyboardOnScreen {
+            view.frame.origin.y += getKeyboardHeight(notification: notification as NSNotification)
+        }
+    }
+    
+    func keyboardDidShow(_ notification: Notification) {
+        
+        keyboardOnScreen = true
+    }
+    
+    func keyboardDidHide(_ notification: Notification) {
+        
+        keyboardOnScreen = false
     }
 }

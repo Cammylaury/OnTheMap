@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import MapKit
 
 class UdacityClient: NSObject, MKMapViewDelegate {
     
@@ -70,8 +71,6 @@ class UdacityClient: NSObject, MKMapViewDelegate {
                 
                 loginWithDataHandler(success, error)
             }
-            
         }
-        
     }
 }
